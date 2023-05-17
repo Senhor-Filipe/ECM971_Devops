@@ -1,0 +1,21 @@
+# nome do workflow
+name: Meu primeiro workflow
+
+# evento, ou seja, quando ele entra em execução
+on: workflow_dispatch
+
+# especificando os jobs deste workflow
+jobs:
+  # nome do primeiro job
+  primeiro_job:
+    # runner do primeiro job
+    runs-on: ubuntu-latest
+    steps:
+      # primeiro step
+      - name: Hello, GitHub Actions!
+        run: echo "Hello, GitHub Actions!"
+      # segundo step
+      - name: Qual o diretório atual?
+        run: pwd
+      # terceiro step
+      - name: Qual o conteúdo do diretório, incluindo arquivos ocultos?
