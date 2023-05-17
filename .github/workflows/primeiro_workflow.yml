@@ -19,3 +19,6 @@ jobs:
         run: pwd
       # terceiro step
       - name: Qual o conteúdo do diretório, incluindo arquivos ocultos?
+        run: ls -a
+      # quarto step
+      
